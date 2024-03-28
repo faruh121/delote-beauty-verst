@@ -75,7 +75,11 @@ nav a:hover {
 main {
     flex: auto;
 }
-
+.first_screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .first_screen h1{
     color: #FFFFFF;
     font-weight: 700;
@@ -93,4 +97,7 @@ main {
     gap: 20px;
     position: absolute;
     bottom: 100px;
+}
+.scroll::before{
+    content: url(./img/mouse.svg);
 }
