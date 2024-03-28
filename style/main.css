@@ -11,8 +11,8 @@ html,body {
     background: url(../style/img/bg.jpg);
     background-size: 100% 100vh;
     background-repeat: no-repeat;
-    background-blend-mode: color;
-    background-color: #111111c7;
+    background-blend-mode: color ;
+    background-color: #00000094;
     color: #FFFFFF;
     font-family: "Cormorant Garamond", serif;
 }
@@ -139,6 +139,12 @@ main {
 
 .information{
 position: relative;
-top: 500px;
+top: 520px;
 left: 520px;
+}
+.services{
+position: relative;
+
+top: 580px;
+left: 290px;
 }
