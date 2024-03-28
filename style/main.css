@@ -9,10 +9,10 @@ html,body {
     display: flex;
     flex-direction: column;
     background: url(../style/img/bg.jpg);
-    background-size: cover;
+    background-size: 100% 100vh;
     background-repeat: no-repeat;
     background-blend-mode: color;
-    background-color: #1111117e;
+    background-color: #111111c7;
     color: #FFFFFF;
     font-family: "Cormorant Garamond", serif;
 }
@@ -28,6 +28,9 @@ header {
     align-items: center;
     justify-content: space-between;  
 }
+#menu, .nav_contact{
+    display: none;
+}
 
 hr {
     border-bottom: solid 1px #FFFFFF;
@@ -35,7 +38,34 @@ hr {
     margin: auto;
     opacity: .5;
 }
-
+#menu:checked ~ ,.nav_contact{
+    display: flex;
+}
+.nav_contact{
+    flex-direction: column;
+    color: #FFFFFF;
+    height: 100%;
+    width: 475px;
+    background-color: #111111;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 0 80px;
+}
+.nav_contact label{
+    position: absolute;
+    top: 42px;
+    left: 82px;
+}
+.nav_contact ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 nav {
     display: flex;
     align-items: center;
@@ -107,3 +137,8 @@ main {
     content: url(./img/mouse-down.svg);   
 }
 
+.information{
+position: relative;
+top: 500px;
+left: 520px;
+}
